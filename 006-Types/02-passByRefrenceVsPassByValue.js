@@ -33,7 +33,7 @@ console.log(`myNewArr: ${myNewArr}`)
 
 // Clonning Objects -> Object.assign  & ...
 
-// Below example is of shallow cloning in which only first later is cloned only.
+// Below example is of shallow cloning in which only first layer is cloned only.
 
 let obj = {
     a: 'a',
@@ -53,4 +53,6 @@ let newObject = {
     }
 }
 
-let
+let deepClone = JSON.parse(JSON.stringify(newObject))
+
+console.log(deepClone)
